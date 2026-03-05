@@ -1,0 +1,46 @@
+# Robots.txt for InternetTools
+# https://internettools.in/robots.txt
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://internettools.in/sitemap.xml
+
+# Crawl-delay for polite crawling (optional)
+Crawl-delay: 1
+
+# Disallow admin/private areas (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow specific important pages
+Allow: /speed-test
+Allow: /blog
+Allow: /world-timezones
+Allow: /password-generator
+Allow: /case-converter
+
+# Block access to build artifacts and system files
+Disallow: /*.js.map$
+Disallow: /*.css.map$
+Disallow: /dist/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /.git/
+Disallow: /.angular/
+
+# Block test files
+Disallow: /*.spec.ts$
+Disallow: /*.test.ts$
+
+# Block configuration files
+Disallow: /angular.json
+Disallow: /tsconfig*.json
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Block build output
+Disallow: /browser/
+Disallow: /server/
